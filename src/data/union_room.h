@@ -418,9 +418,9 @@ const u8 *const sTrainerCardReactionTexts[GENDER_COUNT][2] = {
 };
 
 ALIGNED(4) const u8 sText_MaleTraded1[] = _("¡Oh si!\n¡De verdad quería este POKéMON!\p");
-ALIGNED(4) const u8 sText_MaleTraded2[] = _("Finally, a trade got me that\nPOKéMON I'd wanted a long time.\p");
-ALIGNED(4) const u8 sText_FemaleTraded1[] = _("I'm trading POKéMON right now.\p");
-ALIGNED(4) const u8 sText_FemaleTraded2[] = _("I finally got that POKéMON I\nwanted in a trade!\p");
+ALIGNED(4) const u8 sText_MaleTraded2[] = _("¡Al fin! el intercambio me dio\nel POKéMON que buscaba hace mucho.\p");
+ALIGNED(4) const u8 sText_FemaleTraded1[] = _("Estoy intercambiando POKéMON justo ahora.\p");
+ALIGNED(4) const u8 sText_FemaleTraded2[] = _("¡El fin conseguí al POKéMON que\nquería en un intercambio!\p");
 
 const u8 *const sTradeReactionTexts[GENDER_COUNT][4] = {
     {
@@ -433,28 +433,28 @@ const u8 *const sTradeReactionTexts[GENDER_COUNT][4] = {
     }
 };
 
-ALIGNED(4) const u8 sText_XCheckedTradingBoard[] = _("{STR_VAR_1} checked the\nTRADING BOARD.\p");
-ALIGNED(4) const u8 sText_RegisterMonAtTradingBoard[] = _("Welcome to the TRADING BOARD.\pYou may register your POKéMON\nand offer it up for a trade.\pWould you like to register one of\nyour POKéMON?");
-ALIGNED(4) const u8 sText_TradingBoardInfo[] = _("This TRADING BOARD is used for\noffering a POKéMON for a trade.\pAll you need to do is register a\nPOKéMON for a trade.\pAnother TRAINER may offer a party\nPOKéMON in return for the trade.\pWe hope you will register POKéMON\nand trade them with many, many\lother TRAINERS.\pWould you like to register one of\nyour POKéMON?");
+ALIGNED(4) const u8 sText_XCheckedTradingBoard[] = _("{STR_VAR_1} revisó\nla FICHA ENTRENADOR.\p");
+ALIGNED(4) const u8 sText_RegisterMonAtTradingBoard[] = _("Bienvenido al tablón.\pAqui puedes registrar tus POKéMON\npara ofrecerlos como intercambio.\p¿Quieres registrar alguno de\ntus POKéMON?");
+ALIGNED(4) const u8 sText_TradingBoardInfo[] = _("Este tablón se utiliza\npara ofrecer POKéMON como intercambio.\pSolo debes seleccionar un\nPOKéMON que quieras intercambiar.\pOtro entrenador podrá luego ofrecer\nun POKéMON de su equipo como oferta.\pEsperemos que registres muchos POKéMON\ne intercambies con muchos otros\lEntrenadores.\p¿Quíeres registrar\nalgún POKéMON?");
 ALIGNED(4) const u8 sText_ThankYouForRegistering[] = _("We have registered your POKéMON for\ntrade on the TRADING BOARD.\pThank you for using this service!\p"); // unused
 ALIGNED(4) const u8 sText_NobodyHasRegistered[] = _("Nobody has registered any POKéMON\nfor trade on the TRADING BOARD.\p\n"); // unused
-ALIGNED(4) const u8 sText_ChooseRequestedMonType[] = _("Please choose the type of POKéMON\nthat you would like in the trade.\n");
-ALIGNED(4) const u8 sText_WhichMonWillYouOffer[] = _("Which of your party POKéMON will\nyou offer in trade?\p");
-ALIGNED(4) const u8 sText_RegistrationCanceled[] = _("Registration has been canceled.\p");
-ALIGNED(4) const u8 sText_RegistraionCompleted[] = _("Registration has been completed.\p");
+ALIGNED(4) const u8 sText_ChooseRequestedMonType[] = _("Elige el tipo del POKéMON\nque deseas recibir como intercambio.\n");
+ALIGNED(4) const u8 sText_WhichMonWillYouOffer[] = _("¿Cúal POKéMON de tu equipo\nofreces a cambio?\p");
+ALIGNED(4) const u8 sText_RegistrationCanceled[] = _("Se canceló el registro.\p");
+ALIGNED(4) const u8 sText_RegistraionCompleted[] = _("Se completó el registro.\p");
 ALIGNED(4) const u8 sText_TradeCanceled[] = _("The trade has been canceled.\p");
-ALIGNED(4) const u8 sText_CancelRegistrationOfMon[] = _("Cancel the registration of your\nLv. {STR_VAR_2} {STR_VAR_1}?");
-ALIGNED(4) const u8 sText_CancelRegistrationOfEgg[] = _("Cancel the registration of your\nEGG?");
-ALIGNED(4) const u8 sText_RegistrationCanceled2[] = _("The registration has been canceled.\p");
+ALIGNED(4) const u8 sText_CancelRegistrationOfMon[] = _("¿Cancelas el registro de tu\n {STR_VAR_1} Nv. {STR_VAR_2}?");
+ALIGNED(4) const u8 sText_CancelRegistrationOfEgg[] = _("¿Cancelas el registro\ndel Huevo?");
+ALIGNED(4) const u8 sText_RegistrationCanceled2[] = _("Se canceló el registro.\p");
 ALIGNED(4) const u8 sText_TradeTrainersWillBeListed[] = _("TRAINERS wishing to make a trade\nwill be listed."); // unused
 ALIGNED(4) const u8 sText_ChooseTrainerToTradeWith2[] = _("Please choose the TRAINER with whom\nyou would like to trade POKéMON."); // unused
-ALIGNED(4) const u8 sText_AskTrainerToMakeTrade[] = _("Would you like to ask {STR_VAR_1} to\nmake a trade?");
+ALIGNED(4) const u8 sText_AskTrainerToMakeTrade[] = _("¿Quieres realizar un intercambio con\n{STR_VAR_1}?");
 ALIGNED(4) const u8 sText_AwaitingResponseFromTrainer2[] = _("Awaiting a response from\nthe other TRAINER…"); // unused
 ALIGNED(4) const u8 sText_NotRegisteredAMonForTrade[] = _("You have not registered a POKéMON\nfor trading.\p"); // unused
-ALIGNED(4) const u8 sText_DontHaveTypeTrainerWants[] = _("You don't have a {STR_VAR_2}-type\nPOKéMON that {STR_VAR_1} wants.\p");
-ALIGNED(4) const u8 sText_DontHaveEggTrainerWants[] = _("You don't have an EGG that\n{STR_VAR_1} wants.\p");
-ALIGNED(4) const u8 sText_PlayerCantTradeForYourMon[] = _("{STR_VAR_1} can't make a trade for\nyour POKéMON right now.\p");
-ALIGNED(4) const u8 sText_CantTradeForPartnersMon[] = _("You can't make a trade for\n{STR_VAR_1}'s POKéMON right now.\p");
+ALIGNED(4) const u8 sText_DontHaveTypeTrainerWants[] = _("No tienes un POKéMON tipo {STR_VAR_2}\nque {STR_VAR_1} pide a cambio.\p");
+ALIGNED(4) const u8 sText_DontHaveEggTrainerWants[] = _("No tienes un Huevo que\n{STR_VAR_1} pide a cambio.\p");
+ALIGNED(4) const u8 sText_PlayerCantTradeForYourMon[] = _("{STR_VAR_1} no puede intercambiar\ncontigo en este momento.\p");
+ALIGNED(4) const u8 sText_CantTradeForPartnersMon[] = _("No puedes intercambiar con\n{STR_VAR_1} en este momento.\p");
 
 // Unused
 const u8 *const sCantTradeMonTexts[] = {
@@ -462,28 +462,28 @@ const u8 *const sCantTradeMonTexts[] = {
     sText_CantTradeForPartnersMon
 };
 
-ALIGNED(4) const u8 sText_TradeOfferRejected[] = _("Your trade offer was rejected.\p");
-ALIGNED(4) const u8 sText_EggTrade[] = _("EGG TRADE");
-ALIGNED(4) const u8 sText_ChooseJoinCancel[] = _("{DPAD_UPDOWN}CHOOSE  {A_BUTTON}JOIN  {B_BUTTON}CANCEL");
-ALIGNED(4) const u8 sText_ChooseTrainer[] = _("Please choose a TRAINER.");
-ALIGNED(4) const u8 sText_ChooseTrainerSingleBattle[] = _("Please choose a TRAINER for\na SINGLE BATTLE.");
-ALIGNED(4) const u8 sText_ChooseTrainerDoubleBattle[] = _("Please choose a TRAINER for\na DOUBLE BATTLE.");
-ALIGNED(4) const u8 sText_ChooseLeaderMultiBattle[] = _("Please choose the LEADER\nfor a MULTI BATTLE.");
-ALIGNED(4) const u8 sText_ChooseTrainerToTradeWith[] = _("Please choose the TRAINER to\ntrade with.");
-ALIGNED(4) const u8 sText_ChooseTrainerToShareWonderCards[] = _("Please choose the TRAINER who is\nsharing WONDER CARDS.");
-ALIGNED(4) const u8 sText_ChooseTrainerToShareWonderNews[] = _("Please choose the TRAINER who is\nsharing WONDER NEWS.");
-ALIGNED(4) const u8 sText_ChooseLeaderPokemonJump[] = _("Jump with mini POKéMON!\nPlease choose the LEADER.");
-ALIGNED(4) const u8 sText_ChooseLeaderBerryCrush[] = _("BERRY CRUSH!\nPlease choose the LEADER.");
-ALIGNED(4) const u8 sText_ChooseLeaderBerryPicking[] = _("DODRIO BERRY-PICKING!\nPlease choose the LEADER.");
-ALIGNED(4) const u8 sText_ChooseLeaderBerryBlender[] = _("BERRY BLENDER!\nPlease choose the LEADER.");
-ALIGNED(4) const u8 sText_ChooseLeaderRecordCorner[] = _("RECORD CORNER!\nPlease choose the LEADER.");
-ALIGNED(4) const u8 sText_ChooseLeaderCoolContest[] = _("COOLNESS CONTEST!\nPlease choose the LEADER.");
-ALIGNED(4) const u8 sText_ChooseLeaderBeautyContest[] = _("BEAUTY CONTEST!\nPlease choose the LEADER.");
-ALIGNED(4) const u8 sText_ChooseLeaderCuteContest[] = _("CUTENESS CONTEST!\nPlease choose the LEADER.");
-ALIGNED(4) const u8 sText_ChooseLeaderSmartContest[] = _("SMARTNESS CONTEST!\nPlease choose the LEADER.");
-ALIGNED(4) const u8 sText_ChooseLeaderToughContest[] = _("TOUGHNESS CONTEST!\nPlease choose the LEADER.");
-ALIGNED(4) const u8 sText_ChooseLeaderBattleTowerLv50[] = _("BATTLE TOWER LEVEL 50!\nPlease choose the LEADER.");
-ALIGNED(4) const u8 sText_ChooseLeaderBattleTowerOpenLv[] = _("BATTLE TOWER OPEN LEVEL!\nPlease choose the LEADER.");
+ALIGNED(4) const u8 sText_TradeOfferRejected[] = _("Se rechazó el intercambio.\p");
+ALIGNED(4) const u8 sText_EggTrade[] = _("INTERCAMBIO HUEVO");
+ALIGNED(4) const u8 sText_ChooseJoinCancel[] = _("{DPAD_UPDOWN}Elegir  {A_BUTTON}Unirse  {B_BUTTON}Salir");
+ALIGNED(4) const u8 sText_ChooseTrainer[] = _("Elige un Entrenador.");
+ALIGNED(4) const u8 sText_ChooseTrainerSingleBattle[] = _("Elige un entrenador para\nuna Batalla Simple.");
+ALIGNED(4) const u8 sText_ChooseTrainerDoubleBattle[] = _("Elige un entrenador para\nuna Batalla Doble.");
+ALIGNED(4) const u8 sText_ChooseLeaderMultiBattle[] = _("Elige el Líder de\nla Batalla Múltiple.");
+ALIGNED(4) const u8 sText_ChooseTrainerToTradeWith[] = _("Elige un entrenador para\nintercambiar contigo.");
+ALIGNED(4) const u8 sText_ChooseTrainerToShareWonderCards[] = _("Elige el entrenador que comparte\nFICHAS.");
+ALIGNED(4) const u8 sText_ChooseTrainerToShareWonderNews[] = _("Elige el interenador que comparte\nNOTICIAS.");
+ALIGNED(4) const u8 sText_ChooseLeaderPokemonJump[] = _("¡Salta con pequeños POKéMON!\nElige al Líder.");
+ALIGNED(4) const u8 sText_ChooseLeaderBerryCrush[] = _("¡Machacabayas!\nElige al Líder.");
+ALIGNED(4) const u8 sText_ChooseLeaderBerryPicking[] = _("¡DODRIO Recogebayas!\nElige al Lider.");
+ALIGNED(4) const u8 sText_ChooseLeaderBerryBlender[] = _("¡Licuabayas!\nElige al Lider.");
+ALIGNED(4) const u8 sText_ChooseLeaderRecordCorner[] = _("¡Mezcla de Registros!\nElige al Lider.");
+ALIGNED(4) const u8 sText_ChooseLeaderCoolContest[] = _("¡Concurso de Carisma!\nElige al Lider.");
+ALIGNED(4) const u8 sText_ChooseLeaderBeautyContest[] = _("¡Concurso de Belleza!\nElige al Lider.");
+ALIGNED(4) const u8 sText_ChooseLeaderCuteContest[] = _("¡Concurso de Dulzura!\nElige al Lider.");
+ALIGNED(4) const u8 sText_ChooseLeaderSmartContest[] = _("¡Concurso de Ingenio!\nElige al Lider.");
+ALIGNED(4) const u8 sText_ChooseLeaderToughContest[] = _("¡Concurso de Dureza!\nElige al Lider.");
+ALIGNED(4) const u8 sText_ChooseLeaderBattleTowerLv50[] = _("¡Torre Batlla Nv 50!\nElige al Lider.");
+ALIGNED(4) const u8 sText_ChooseLeaderBattleTowerOpenLv[] = _("¡Torre Batlla Nv Libre!\nElige al Lider.");
 
 static const u8 *const sChooseTrainerTexts[NUM_LINK_GROUP_TYPES] = 
 {
@@ -511,53 +511,53 @@ static const u8 *const sChooseTrainerTexts[NUM_LINK_GROUP_TYPES] =
     [LINK_GROUP_BATTLE_TOWER_OPEN] = sText_ChooseLeaderBattleTowerOpenLv
 };
 
-ALIGNED(4) const u8 sText_SearchingForWirelessSystemWait[] = _("Searching for a WIRELESS\nCOMMUNICATION SYSTEM. Wait...");
+ALIGNED(4) const u8 sText_SearchingForWirelessSystemWait[] = _("Buscando\nconexiones inalámbricas. Espere...");
 ALIGNED(4) const u8 sText_MustHaveTwoMonsForDoubleBattle[] = _("For a DOUBLE BATTLE, you must have\nat least two POKéMON.\p"); // Unused
-ALIGNED(4) const u8 sText_AwaitingPlayersResponse[] = _("Awaiting {STR_VAR_1}'s response…");
-ALIGNED(4) const u8 sText_PlayerHasBeenAskedToRegisterYouPleaseWait[] = _("{STR_VAR_1} has been asked to register\nyou as a member. Please wait.");
-ALIGNED(4) const u8 sText_AwaitingResponseFromWirelessSystem[] = _("Awaiting a response from the\nWIRELESS COMMUNICATION SYSTEM.");
+ALIGNED(4) const u8 sText_AwaitingPlayersResponse[] = _("Esperando respuesta de {STR_VAR_1}…");
+ALIGNED(4) const u8 sText_PlayerHasBeenAskedToRegisterYouPleaseWait[] = _("{STR_VAR_1} solicitú tu registro\ncomo miembro. Espere por favor.");
+ALIGNED(4) const u8 sText_AwaitingResponseFromWirelessSystem[] = _("Esperando respuesta del\nsistema de comunicación inalámbrica.");
 ALIGNED(4) const u8 sText_PleaseWaitForOtherTrainersToGather[] = _("Please wait for other TRAINERS to\ngather and get ready."); // Unused
-ALIGNED(4) const u8 sText_NoCardsSharedRightNow[] = _("No CARDS appear to be shared \nright now.");
-ALIGNED(4) const u8 sText_NoNewsSharedRightNow[] = _("No NEWS appears to be shared\nright now.");
+ALIGNED(4) const u8 sText_NoCardsSharedRightNow[] = _("No se comparten FICHAS\nen este momento.");
+ALIGNED(4) const u8 sText_NoNewsSharedRightNow[] = _("No se comparten noticias\nen este momento.");
 
 const u8 *const sNoWonderSharedTexts[] = {
     sText_NoCardsSharedRightNow,
     sText_NoNewsSharedRightNow
 };
 
-ALIGNED(4) const u8 sText_Battle[] = _("BATTLE");
-ALIGNED(4) const u8 sText_Chat2[] = _("CHAT");
-ALIGNED(4) const u8 sText_Greetings[] = _("GREETINGS");
-ALIGNED(4) const u8 sText_Exit[] = _("EXIT");
-ALIGNED(4) const u8 sText_Exit2[] = _("EXIT");
-ALIGNED(4) const u8 sText_Info[] = _("INFO");
-ALIGNED(4) const u8 sText_NameWantedOfferLv[] = _("NAME{CLEAR_TO 0x3C}WANTED{CLEAR_TO 0x6E}OFFER{CLEAR_TO 0xC6}LV.");
-ALIGNED(4) const u8 sText_SingleBattle[] = _("SINGLE BATTLE");
-ALIGNED(4) const u8 sText_DoubleBattle[] = _("DOUBLE BATTLE");
-ALIGNED(4) const u8 sText_MultiBattle[] = _("MULTI BATTLE");
-ALIGNED(4) const u8 sText_PokemonTrades[] = _("POKéMON TRADES");
-ALIGNED(4) const u8 sText_Chat[] = _("CHAT");
-ALIGNED(4) const u8 sText_Cards[] = _("CARDS");
-ALIGNED(4) const u8 sText_WonderCards[] = _("WONDER CARDS");
-ALIGNED(4) const u8 sText_WonderNews[] = _("WONDER NEWS");
-ALIGNED(4) const u8 sText_PokemonJump[] = _("POKéMON JUMP");
-ALIGNED(4) const u8 sText_BerryCrush[] = _("BERRY CRUSH");
-ALIGNED(4) const u8 sText_BerryPicking[] = _("BERRY-PICKING");
-ALIGNED(4) const u8 sText_Search[] = _("SEARCH");
-ALIGNED(4) const u8 sText_BerryBlender[] = _("BERRY BLENDER");
-ALIGNED(4) const u8 sText_RecordCorner[] = _("RECORD CORNER");
-ALIGNED(4) const u8 sText_CoolContest[] = _("COOL CONTEST");
-ALIGNED(4) const u8 sText_BeautyContest[] = _("BEAUTY CONTEST");
-ALIGNED(4) const u8 sText_CuteContest[] = _("CUTE CONTEST");
-ALIGNED(4) const u8 sText_SmartContest[] = _("SMART CONTEST");
-ALIGNED(4) const u8 sText_ToughContest[] = _("TOUGH CONTEST");
-ALIGNED(4) const u8 sText_BattleTowerLv50[] = _("BATTLE TOWER LV. 50");
-ALIGNED(4) const u8 sText_BattleTowerOpenLv[] = _("BATTLE TOWER OPEN LEVEL");
-ALIGNED(4) const u8 sText_ItsNormalCard[] = _("It's a NORMAL CARD.");
-ALIGNED(4) const u8 sText_ItsBronzeCard[] = _("It's a BRONZE CARD!");
-ALIGNED(4) const u8 sText_ItsCopperCard[] = _("It's a COPPER CARD!");
-ALIGNED(4) const u8 sText_ItsSilverCard[] = _("It's a SILVER CARD!");
-ALIGNED(4) const u8 sText_ItsGoldCard[] = _("It's a GOLD CARD!");
+ALIGNED(4) const u8 sText_Battle[] = _("Luchar");
+ALIGNED(4) const u8 sText_Chat2[] = _("Hablar");
+ALIGNED(4) const u8 sText_Greetings[] = _("Saludos");
+ALIGNED(4) const u8 sText_Exit[] = _("Salir");
+ALIGNED(4) const u8 sText_Exit2[] = _("Salir");
+ALIGNED(4) const u8 sText_Info[] = _("Datos");
+ALIGNED(4) const u8 sText_NameWantedOfferLv[] = _("Nombre{CLEAR_TO 0x3C}Quiere{CLEAR_TO 0x6E}Ofrece{CLEAR_TO 0xC6}Nv.");
+ALIGNED(4) const u8 sText_SingleBattle[] = _("Batalla Simple");
+ALIGNED(4) const u8 sText_DoubleBattle[] = _("Batalla Doble");
+ALIGNED(4) const u8 sText_MultiBattle[] = _("Batalla Múltiple");
+ALIGNED(4) const u8 sText_PokemonTrades[] = _("Intercambios");
+ALIGNED(4) const u8 sText_Chat[] = _("Hablar");
+ALIGNED(4) const u8 sText_Cards[] = _("Fichas");
+ALIGNED(4) const u8 sText_WonderCards[] = _("Fichas");
+ALIGNED(4) const u8 sText_WonderNews[] = _("Noticias");
+ALIGNED(4) const u8 sText_PokemonJump[] = _("Salto POKéMON");
+ALIGNED(4) const u8 sText_BerryCrush[] = _("Machacabayas");
+ALIGNED(4) const u8 sText_BerryPicking[] = _("Recogebayas");
+ALIGNED(4) const u8 sText_Search[] = _("Buscar");
+ALIGNED(4) const u8 sText_BerryBlender[] = _("Licuabayas");
+ALIGNED(4) const u8 sText_RecordCorner[] = _("Mezclar registros");
+ALIGNED(4) const u8 sText_CoolContest[] = _("Concurso de Carisma");
+ALIGNED(4) const u8 sText_BeautyContest[] = _("Concurso de Belleza");
+ALIGNED(4) const u8 sText_CuteContest[] = _("Concurso de Dulzura");
+ALIGNED(4) const u8 sText_SmartContest[] = _("Concurso de Ingenio");
+ALIGNED(4) const u8 sText_ToughContest[] = _("Concurso de Dureza");
+ALIGNED(4) const u8 sText_BattleTowerLv50[] = _("Torre Batalla Nv. 50");
+ALIGNED(4) const u8 sText_BattleTowerOpenLv[] = _("Torre Batalla Nv. Libre");
+ALIGNED(4) const u8 sText_ItsNormalCard[] = _("Es una Ficha normal.");
+ALIGNED(4) const u8 sText_ItsBronzeCard[] = _("¡Es una ficha de bronze!");
+ALIGNED(4) const u8 sText_ItsCopperCard[] = _("¡Es una ficha de cobre!");
+ALIGNED(4) const u8 sText_ItsSilverCard[] = _("¡Es una ficha plateada!");
+ALIGNED(4) const u8 sText_ItsGoldCard[] = _("¡Es una ficha dorada!");
 
 static const u8 *const sCardColorTexts[] = {
     sText_ItsNormalCard,
@@ -567,17 +567,17 @@ static const u8 *const sCardColorTexts[] = {
     sText_ItsGoldCard
 };
 
-ALIGNED(4) const u8 sText_TrainerCardInfoPage1[] = _("This is {DYNAMIC 0} {DYNAMIC 1}'s\nTRAINER CARD…\l{DYNAMIC 2}\pPOKéDEX: {DYNAMIC 3}\nTIME:    {DYNAMIC 4}:{DYNAMIC 5}\p");
-ALIGNED(4) const u8 sText_TrainerCardInfoPage2[] = _("BATTLES: WINS: {DYNAMIC 0}  LOSSES: {DYNAMIC 2}\nTRADES: {DYNAMIC 3}\p“{DYNAMIC 4} {DYNAMIC 5}\n{DYNAMIC 6} {DYNAMIC 7}”\p");
-ALIGNED(4) const u8 sText_GladToMeetYouMale[] = _("{DYNAMIC 1}: Glad to have met you!{PAUSE 60}");
-ALIGNED(4) const u8 sText_GladToMeetYouFemale[] = _("{DYNAMIC 1}: Glad to meet you!{PAUSE 60}");
+ALIGNED(4) const u8 sText_TrainerCardInfoPage1[] = _("Esta es La FICHA ENTRENADOR de \n{DYNAMIC 0} {DYNAMIC 1}…\l{DYNAMIC 2}\pPOKéDEX: {DYNAMIC 3}\nT. Juego:    {DYNAMIC 4}:{DYNAMIC 5}\p");
+ALIGNED(4) const u8 sText_TrainerCardInfoPage2[] = _("Batallas: V: {DYNAMIC 0}  D: {DYNAMIC 2}\nIntercambios: {DYNAMIC 3}\p“{DYNAMIC 4} {DYNAMIC 5}\n{DYNAMIC 6} {DYNAMIC 7}”\p");
+ALIGNED(4) const u8 sText_GladToMeetYouMale[] = _("{DYNAMIC 1}: ¡Un placer conocerte!{PAUSE 60}");
+ALIGNED(4) const u8 sText_GladToMeetYouFemale[] = _("{DYNAMIC 1}: ¡Un placer conocerte!{PAUSE 60}");
 
 const u8 *const sGladToMeetYouTexts[GENDER_COUNT] = {
     sText_GladToMeetYouMale,
     sText_GladToMeetYouFemale
 };
 
-ALIGNED(4) const u8 sText_FinishedCheckingPlayersTrainerCard[] = _("Finished checking {DYNAMIC 1}'s\nTRAINER CARD.{PAUSE 60}");
+ALIGNED(4) const u8 sText_FinishedCheckingPlayersTrainerCard[] = _("Terminaste de revisar la FICHA ENTRENADOR de\n{DYNAMIC 1}.{PAUSE 60}");
 
 static const u8 *const sLinkGroupActivityNameTexts[] = {
     [ACTIVITY_NONE]              = sText_EmptyString,
