@@ -2,7 +2,7 @@
 #include "mevent_client.h"
 #include "mevent_server.h"
 
-const u8 gText_CanceledReadingCard[] = _("Canceled reading\nthe Card.");
+const u8 gText_CanceledReadingCard[] = _("Se canceló\nla lectura de la carta.");
 
 
 const struct mevent_client_cmd gUnknown_082F2598[] = {

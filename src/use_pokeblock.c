@@ -869,9 +869,12 @@ static void CloseUsePokeblockMenu(void)
 static void AskUsePokeblock(void)
 {
     u8 stringBuffer[0x40];
+    u8 nameBuffer[11];
 
-    GetMonData(&gPlayerParty[GetPartyIdFromSelectionId(sMenu->info.curSelection)], MON_DATA_NICKNAME, stringBuffer);
-    StringGetEnd10(stringBuffer);
+    GetMonData(&gPlayerParty[GetPartyIdFromSelectionId(sMenu->info.curSelection)], MON_DATA_NICKNAME, nameBuffer);
+    StringGetEnd10(nameBuffer);
+    StringAppend(stringBuffer, gText_GetsAPokeBlockPrefix);
+    StringAppend(stringBuffer, nameBuffer);
     StringAppend(stringBuffer, gText_GetsAPokeBlockQuestion);
     StringCopy(gStringVar4, stringBuffer);
     FillWindowPixelBuffer(WIN_TEXT, 17);

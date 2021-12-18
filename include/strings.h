@@ -25,6 +25,7 @@ extern const u8 gText_OpenLevel[];
 extern const u8 gText_Mom[];
 extern const u8 gText_Dad[];
 
+extern const u8 gText_GetsAPokeBlockPrefix[];
 extern const u8 gText_GetsAPokeBlockQuestion[];
 extern const u8 gText_WontEatAnymore[];
 extern const u8 gText_WasEnhanced[];

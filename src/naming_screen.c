@@ -203,7 +203,7 @@ static const u8 *const sTransferredToPCMessages[] =
     gText_PkmnTransferredLanettesPCBoxFull
 };
 
-static const u8 sText_AlphabetUpperLower[] = _("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!");
+static const u8 sText_AlphabetUpperLower[] = _("ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz!");
 
 static const struct BgTemplate sBgTemplates[] =
 {

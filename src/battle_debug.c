@@ -156,16 +156,16 @@ enum
 static const u8 *GetHoldEffectName(u16 holdEffect);
 
 // const rom data
-static const u8 sText_HoldEffect[] = _("Hold Effect");
-static const u8 sText_Ability[] = _("Ability");
-static const u8 sText_Moves[] = _("Moves");
-static const u8 sText_Stats[] = _("Stats");
-static const u8 sText_StatStages[] = _("Stat Stages");
-static const u8 sText_Status1[] = _("Status1");
-static const u8 sText_Status2[] = _("Status2");
-static const u8 sText_Status3[] = _("Status3");
-static const u8 sText_HeldItem[] = _("Held Item");
-static const u8 sText_SideStatus[] = _("Side Status");
+static const u8 sText_HoldEffect[] = _("Efecto");
+static const u8 sText_Ability[] = _("Habilidad");
+static const u8 sText_Moves[] = _("Movimientos");
+static const u8 sText_Stats[] = _("Características");
+static const u8 sText_StatStages[] = _("Cambios");
+static const u8 sText_Status1[] = _("Estado1");
+static const u8 sText_Status2[] = _("Estado2");
+static const u8 sText_Status3[] = _("Estado3");
+static const u8 sText_HeldItem[] = _("Objeto");
+static const u8 sText_SideStatus[] = _("Lados");
 static const u8 sText_MaxHp[] = _("HP Max");
 static const u8 sText_CurrHp[] = _("HP Current");
 static const u8 sText_Freeze[] = _("Freeze");
