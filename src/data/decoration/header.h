@@ -315,7 +315,7 @@ const struct Decoration gDecorations[] =
     [DECOR_YELLOW_BRICK] =
     {
         .id = DECOR_YELLOW_BRICK,
-        .name = _("Ladrillo Amarillo"),
+        .name = _("Lad. Amarillo"),
         .permission = DECORPERM_SOLID_FLOOR,
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_ORNAMENT,
@@ -963,7 +963,7 @@ const struct Decoration gDecorations[] =
     [DECOR_CYNDAQUIL_DOLL] =
     {
         .id = DECOR_CYNDAQUIL_DOLL,
-        .name = _("Muñeco Cyndaquil"),
+        .name = _("Muñ. Cyndaquil"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
@@ -975,7 +975,7 @@ const struct Decoration gDecorations[] =
     [DECOR_CHIKORITA_DOLL] =
     {
         .id = DECOR_CHIKORITA_DOLL,
-        .name = _("Muñeco Chikorita"),
+        .name = _("Muñ. Chikorita"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
@@ -999,7 +999,7 @@ const struct Decoration gDecorations[] =
     [DECOR_JIGGLYPUFF_DOLL] =
     {
         .id = DECOR_JIGGLYPUFF_DOLL,
-        .name = _("Muñeco Jigglypuff"),
+        .name = _("Muñ. Jigglypuff"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
@@ -1383,7 +1383,7 @@ const struct Decoration gDecorations[] =
     [DECOR_CHARIZARD_DOLL] =
     {
         .id = DECOR_CHARIZARD_DOLL,
-        .name = _("Muñeco Charizard"),
+        .name = _("Muñ. Charizard"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
@@ -1395,7 +1395,7 @@ const struct Decoration gDecorations[] =
     [DECOR_BLASTOISE_DOLL] =
     {
         .id = DECOR_BLASTOISE_DOLL,
-        .name = _("Muñeco Blastoise"),
+        .name = _("Muñ. Blastoise"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
@@ -1443,7 +1443,7 @@ const struct Decoration gDecorations[] =
     [DECOR_REGISTEEL_DOLL] =
     {
         .id = DECOR_REGISTEEL_DOLL,
-        .name = _("Muñeco Registeel"),
+        .name = _("Muñ. Registeel"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,

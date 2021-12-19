@@ -112,7 +112,7 @@ static const u8 *const sPlayerUnavailableTexts[] = {
     sText_MemberNoLongerAvailable
 };
 
-ALIGNED(4) const u8 sText_TrainerAppearsUnavailable[] = _("El otro jugador no parece\estar disponible…\p");
+ALIGNED(4) const u8 sText_TrainerAppearsUnavailable[] = _("El otro jugador no parece\nestar disponible…\p");
 ALIGNED(4) const u8 sText_PlayerSentBackOK[] = _("¡{STR_VAR_1} envió una confirmación!");
 ALIGNED(4) const u8 sText_PlayerOKdRegistration[] = _("{STR_VAR_1} OK'd your registration as\na member.");
 ALIGNED(4) const u8 sText_PlayerRepliedNo[] = _("{STR_VAR_1} dijo que no…\p");

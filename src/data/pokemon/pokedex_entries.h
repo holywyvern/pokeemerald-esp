@@ -350,7 +350,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_NIDORAN_F] =
     {
-        .categoryName = _("Aguja Venenosa"),
+        .categoryName = _("Aguja Ven"),
         .height = 4,
         .weight = 70,
         .description = gNidoranFPokedexText,
@@ -362,7 +362,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_NIDORINA] =
     {
-        .categoryName = _("Aguja Venenosa"),
+        .categoryName = _("Aguja Ven"),
         .height = 8,
         .weight = 200,
         .description = gNidorinaPokedexText,
@@ -386,7 +386,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_NIDORAN_M] =
     {
-        .categoryName = _("Aguja Venenosa"),
+        .categoryName = _("Aguja Ven"),
         .height = 5,
         .weight = 90,
         .description = gNidoranMPokedexText,
@@ -398,7 +398,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_NIDORINO] =
     {
-        .categoryName = _("Aguja Venenosa"),
+        .categoryName = _("Aguja Ven"),
         .height = 9,
         .weight = 195,
         .description = gNidorinoPokedexText,
@@ -926,7 +926,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_PONYTA] =
     {
-        .categoryName = _("Caballo Llama"),
+        .categoryName = _("Caballo Fue"),
         .height = 10,
         .weight = 300,
         .description = gPonytaPokedexText,
@@ -938,7 +938,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_RAPIDASH] =
     {
-        .categoryName = _("Caballo Llama"),
+        .categoryName = _("Caballo Fue"),
         .height = 17,
         .weight = 950,
         .description = gRapidashPokedexText,
@@ -1142,7 +1142,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_ONIX] =
     {
-        .categoryName = _("Serpiente Rocas"),
+        .categoryName = _("Sierpe Rocas"),
         .height = 88,
         .weight = 2100,
         .description = gOnixPokedexText,
@@ -1586,7 +1586,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_DITTO] =
     {
-        .categoryName = _("Transformación"),
+        .categoryName = _("Amorfo"),
         .height = 3,
         .weight = 40,
         .description = gDittoPokedexText,
@@ -1814,7 +1814,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_MEW] =
     {
-        .categoryName = _("Nueva Especie"),
+        .categoryName = _("Nueva Esp."),
         .height = 4,
         .weight = 40,
         .description = gMewPokedexText,
@@ -2498,7 +2498,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_STEELIX] =
     {
-        .categoryName = _("Serpiente Férrea"),
+        .categoryName = _("Serpférrea"),
         .height = 92,
         .weight = 4000,
         .description = gSteelixPokedexText,
@@ -2582,7 +2582,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_SNEASEL] =
     {
-        .categoryName = _("Garra Afilada"),
+        .categoryName = _("Garra Filo"),
         .height = 9,
         .weight = 280,
         .description = gSneaselPokedexText,
@@ -2966,7 +2966,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_PUPITAR] =
     {
-        .categoryName = _("Caparazón Duro"),
+        .categoryName = _("Caparazón"),
         .height = 12,
         .weight = 1520,
         .description = gPupitarPokedexText,
@@ -3014,7 +3014,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_CELEBI] =
     {
-        .categoryName = _("Viajero Temporal"),
+        .categoryName = _("Viaje tiempo"),
         .height = 6,
         .weight = 50,
         .description = gCelebiPokedexText,
@@ -3650,7 +3650,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_ARON] =
     {
-        .categoryName = _("Amardura Acero"),
+        .categoryName = _("Cor. férrea"),
         .height = 4,
         .weight = 600,
         .description = gAronPokedexText,
@@ -3662,7 +3662,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_LAIRON] =
     {
-        .categoryName = _("Amardura Acero"),
+        .categoryName = _("Cor. férrea"),
         .height = 9,
         .weight = 1200,
         .description = gLaironPokedexText,
@@ -3674,7 +3674,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_AGGRON] =
     {
-        .categoryName = _("Amardura Acero"),
+        .categoryName = _("Cor. férrea"),
         .height = 21,
         .weight = 3600,
         .description = gAggronPokedexText,
@@ -3806,7 +3806,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_SWALOT] =
     {
-        .categoryName = _("Bolsa Venenosa"),
+        .categoryName = _("Bolsa Ven"),
         .height = 17,
         .weight = 800,
         .description = gSwalotPokedexText,
@@ -3986,7 +3986,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_CACTURNE] =
     {
-        .categoryName = _("Espantapájaros"),
+        .categoryName = _("Espantajo"),
         .height = 13,
         .weight = 774,
         .description = gCacturnePokedexText,
@@ -3998,7 +3998,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_SWABLU] =
     {
-        .categoryName = _("Pajaro Algodón"),
+        .categoryName = _("Ave Algodón"),
         .height = 4,
         .weight = 12,
         .description = gSwabluPokedexText,
@@ -4118,7 +4118,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_BALTOY] =
     {
-        .categoryName = _("Muñeco de Barro"),
+        .categoryName = _("Muñeco Barro"),
         .height = 5,
         .weight = 215,
         .description = gBaltoyPokedexText,
@@ -4130,7 +4130,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_CLAYDOL] =
     {
-        .categoryName = _("Muñeco de Barro"),
+        .categoryName = _("Muñeco Barro"),
         .height = 15,
         .weight = 1080,
         .description = gClaydolPokedexText,
@@ -4514,7 +4514,7 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_METAGROSS] =
     {
-        .categoryName = _("Pierna Férrea"),
+        .categoryName = _("Pata Hierro"),
         .height = 16,
         .weight = 5500,
         .description = gMetagrossPokedexText,
