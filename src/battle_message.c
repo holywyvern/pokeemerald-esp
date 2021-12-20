@@ -414,15 +414,15 @@ static const u8 sText_PkmnGoodComeBack[] = _("¡{B_BUFF1}, bien!\n¡Regresa!");
 static const u8 sText_Trainer1WithdrewPkmn[] = _("¡{B_TRAINER1_CLASS} {B_TRAINER1_NAME}\nretiró a {B_BUFF1}!");
 static const u8 sText_LinkTrainer1WithdrewPkmn[] = _("¡{B_LINK_OPPONENT1_NAME} retiró a\n{B_BUFF1}!");
 static const u8 sText_LinkTrainer2WithdrewPkmn[] = _("¡{B_LINK_SCR_TRAINER_NAME} retiró a\n{B_BUFF1}!");
-static const u8 sText_WildPkmnPrefix[] = _("Salvaje ");
-static const u8 sText_FoePkmnPrefix[] = _("Enemigo ");
+static const u8 sText_WildPkmnPrefix[] = _("salvaje");
+static const u8 sText_FoePkmnPrefix[] = _("enemigo");
 static const u8 sText_EmptyString8[] = _("");
-static const u8 sText_FoePkmnPrefix2[] = _("Enemigo");
-static const u8 sText_AllyPkmnPrefix[] = _("Aliado");
-static const u8 sText_FoePkmnPrefix3[] = _("Enemigo");
-static const u8 sText_AllyPkmnPrefix2[] = _("Aliado");
-static const u8 sText_FoePkmnPrefix4[] = _("Enemigo");
-static const u8 sText_AllyPkmnPrefix3[] = _("Aliado");
+static const u8 sText_FoePkmnPrefix2[] = _("enemigo");
+static const u8 sText_AllyPkmnPrefix[] = _("aliado");
+static const u8 sText_FoePkmnPrefix3[] = _("enemigo");
+static const u8 sText_AllyPkmnPrefix2[] = _("aliado");
+static const u8 sText_FoePkmnPrefix4[] = _("enemigo");
+static const u8 sText_AllyPkmnPrefix3[] = _("aliado");
 static const u8 sText_AttackerUsedX[] = _("¡{B_ATK_NAME_WITH_PREFIX} usó\n{B_BUFF3}!");
 static const u8 sText_ExclamationMark[] = _("!");
 static const u8 sText_ExclamationMark2[] = _("!");
@@ -1699,8 +1699,8 @@ const u8 gText_WhatWillPkmnDo[] = _("¿Qué hará\n{B_ACTIVE_NAME2}?");
 const u8 gText_WhatWillPkmnDo2[] = _("¿Qué hará\n{B_PLAYER_NAME}?");
 const u8 gText_WhatWillWallyDo[] = _("¿Que hará\nBlasco?");
 const u8 gText_LinkStandby[] = _("{PAUSE 16}Esperando conexión…");
-const u8 gText_BattleMenu[] = _("LUCHAR{CLEAR_TO 56}BOLSA\nPOKéMON{CLEAR_TO 56}ESCAPAR");
-const u8 gText_SafariZoneMenu[] = _("BALL{CLEAR_TO 56}{POKEBLOCK}\nACERCARSE{CLEAR_TO 56}ESCAPAR");
+const u8 gText_BattleMenu[] = _("LUCHAR{CLEAR_TO 56}BOLSA\nPOKéMON{CLEAR_TO 56}ESCAPE");
+const u8 gText_SafariZoneMenu[] = _("BALL{CLEAR_TO 56}{POKEBLOCK}\nACERCARSE{CLEAR_TO 56}ESCAPE");
 const u8 gText_MoveInterfacePP[] = _("PP ");
 const u8 gText_MoveInterfaceType[] = _("Tipo/");
 const u8 gText_MoveInterfacePpType[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW DYNAMIC_COLOR4 DYNAMIC_COLOR5 DYNAMIC_COLOR6}PP\nTipo/");
@@ -2191,6 +2191,42 @@ static const struct BattleWindowText sTextOnWindowsInfo_Normal[] =
         .bgColor = 0,
         .shadowColor = 6,
     },
+    { // 24 "type" super-effective
+    	.fillValue = PIXEL_FILL(0xE),
+    	.fontId = 7,
+    	.x = 0,
+    	.y = 1,
+    	.letterSpacing = 0,
+    	.lineSpacing = 0,
+    	.speed = 0,
+    	.fgColor = 6,
+    	.bgColor = 14,
+    	.shadowColor = 5,
+    },
+    { // 25 "type" not very effective
+    	.fillValue = PIXEL_FILL(0xE),
+    	.fontId = 7,
+    	.x = 0,
+    	.y = 1,
+    	.letterSpacing = 0,
+    	.lineSpacing = 0,
+    	.speed = 0,
+    	.fgColor = 1,
+    	.bgColor = 14,
+    	.shadowColor = 3,
+    },
+    { // 26 "type" no effect
+    	.fillValue = PIXEL_FILL(0xE),
+    	.fontId = 7,
+    	.x = 0,
+    	.y = 1,
+    	.letterSpacing = 0,
+    	.lineSpacing = 0,
+    	.speed = 0,
+    	.fgColor = 11,
+    	.bgColor = 14,
+    	.shadowColor = 11,
+    },    
 };
 
 static const struct BattleWindowText sTextOnWindowsInfo_Arena[] =
@@ -2829,20 +2865,17 @@ static void GetBattlerNick(u32 battlerId, u8 *dst)
 }
 
 #define HANDLE_NICKNAME_STRING_CASE(battlerId)                          \
+    GetBattlerNick(battlerId, text);                                    \
+    StringGetEnd10(text);                                               \
     if (GetBattlerSide(battlerId) != B_SIDE_PLAYER)                     \
     {                                                                   \
         if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)                     \
             toCpy = sText_FoePkmnPrefix;                                \
         else                                                            \
             toCpy = sText_WildPkmnPrefix;                               \
-        while (*toCpy != EOS)                                           \
-        {                                                               \
-            dst[dstID] = *toCpy;                                        \
-            dstID++;                                                    \
-            toCpy++;                                                    \
-        }                                                               \
+        StringAppend(text, gText_Space2);                               \
+        StringAppend(text, toCpy);                                      \
     }                                                                   \
-    GetBattlerNick(battlerId, text);                                    \
     toCpy = text;
 
 static const u8 *BattleStringGetOpponentNameByTrainerId(u16 trainerId, u8 *text, u8 multiplayerId, u8 battlerId)
@@ -3489,6 +3522,8 @@ static void ExpandBattleTextBuffPlaceholders(const u8 *src, u8 *dst)
             srcID += 2;
             break;
         case B_BUFF_MON_NICK_WITH_PREFIX: // poke nick with prefix
+            StringGetEnd10(text);
+            StringAppend(dst, text);        
             if (GetBattlerSide(src[srcID + 1]) == B_SIDE_PLAYER)
             {
                 GetMonData(&gPlayerParty[src[srcID + 2]], MON_DATA_NICKNAME, text);
@@ -3502,8 +3537,8 @@ static void ExpandBattleTextBuffPlaceholders(const u8 *src, u8 *dst)
 
                 GetMonData(&gEnemyParty[src[srcID + 2]], MON_DATA_NICKNAME, text);
             }
-            StringGetEnd10(text);
-            StringAppend(dst, text);
+            // StringGetEnd10(text);
+            // StringAppend(dst, text);            
             srcID += 3;
             break;
         case B_BUFF_STAT: // stats
