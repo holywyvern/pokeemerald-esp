@@ -352,6 +352,7 @@ const u8 gText_ThankYouIllSendItHome[] = _("¡Gracias!\nLo he enviado a tu PC.")
 const u8 gText_ThanksIllSendItHome[] = _("¡Gracias!\nLo he enviado a la PC de tu casa.");
 const u8 gText_YouDontHaveMoney[] = _("No tienes dinero suficiente.{PAUSE_UNTIL_PRESS}");
 const u8 gText_NoMoreRoomForThis[] = _("No tienes espacio para llevar este\nobjeto.{PAUSE_UNTIL_PRESS}");
+const u8 gText_YouAlreadyHaveThis[] = _("Ya tienes este objeto.{PAUSE_UNTIL_PRESS}");
 const u8 gText_SpaceForVar1Full[] = _("No hay espacio para {STR_VAR_1}.{PAUSE_UNTIL_PRESS}");
 const u8 gText_AnythingElseICanHelp[] = _("¿Necesita que le ayude\nen algo?");
 const u8 gText_CanIHelpWithAnythingElse[] = _("¿Necesita mi ayuda para\nalgo más?");
