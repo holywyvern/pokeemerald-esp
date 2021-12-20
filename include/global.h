@@ -15,6 +15,10 @@
 // Prevent cross-jump optimization.
 #define BLOCK_CROSS_JUMP asm("");
 
+#define MODIFIER_EMERALD_EXT 3
+
+#define VERSION_MODIFIER (MODIFIER_EMERALD_EXT)
+
 // to help in decompiling
 #define asm_comment(x) asm volatile("@ -- " x " -- ")
 #define asm_unified(x) asm(".syntax unified\n" x "\n.syntax divided")

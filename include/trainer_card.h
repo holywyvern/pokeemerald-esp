@@ -56,13 +56,14 @@ struct TrainerCard
     /*0x54*/ u16 monSpecies[PARTY_SIZE]; // FRLG only
     /*0x60*/ bool16 hasAllSymbols;
     /*0x62*/ u16 frontierBP;
+    /*0x64*/ u8 versionModifier;
 };
 
 extern struct TrainerCard gTrainerCards[4];
 
 u32 CountPlayerTrainerStars(void);
 u8 GetTrainerCardStars(u8 cardId);
-void CopyTrainerCardData(struct TrainerCard *dst, u16 *src, u8 gameVersion);
+void CopyTrainerCardData(struct TrainerCard *dst, u16 *src, u8 gameVersion, u8 versionModifier);
 void ShowPlayerTrainerCard(void (*callback)(void));
 void ShowTrainerCardInLink(u8 arg0, void (*callback)(void));
 void TrainerCard_GenerateCardForPlayer(struct TrainerCard *);

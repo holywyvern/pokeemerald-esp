@@ -111,7 +111,7 @@ static u8 GetRubyTrainerStars(struct TrainerCard*);
 static u16 GetCaughtMonsCount(void);
 static void SetPlayerCardData(struct TrainerCard*, u8);
 static void TrainerCard_GenerateCardForLinkPlayer(struct TrainerCard*);
-static u8 VersionToCardType(u8);
+static u8 VersionToCardType(u8, u8);
 static void SetDataFromTrainerCard(void);
 static void InitGpuRegs(void);
 static void ResetGpuRegs(void);
@@ -754,7 +754,10 @@ static void TrainerCard_GenerateCardForLinkPlayer(struct TrainerCard *trainerCar
 {
     memset(trainerCard, 0, sizeof(struct TrainerCard));
     trainerCard->version = GAME_VERSION;
-    SetPlayerCardData(trainerCard, CARD_TYPE_EMERALD);
+    trainerCard->versionModifier = VERSION_MODIFIER;
+    // SetPlayerCardData(trainerCard, CARD_TYPE_EMERALD);
+    SetPlayerCardData(trainerCard, VersionToCardType(GAME_VERSION, VERSION_MODIFIER));
+
     trainerCard->hasAllSymbols = HasAllFrontierSymbols();
     trainerCard->frontierBP = gSaveBlock2Ptr->frontier.cardBattlePoints;
     if (trainerCard->hasAllSymbols)
@@ -768,9 +771,11 @@ static void TrainerCard_GenerateCardForLinkPlayer(struct TrainerCard *trainerCar
 
 void TrainerCard_GenerateCardForPlayer(struct TrainerCard *trainerCard)
 {
-    memset(trainerCard, 0, 0x60);
+    memset(trainerCard, 0, sizeof(struct TrainerCard));
     trainerCard->version = GAME_VERSION;
-    SetPlayerCardData(trainerCard, CARD_TYPE_EMERALD);
+    trainerCard->versionModifier = VERSION_MODIFIER;
+    // SetPlayerCardData(trainerCard, CARD_TYPE_EMERALD);
+    SetPlayerCardData(trainerCard, VersionToCardType(GAME_VERSION, VERSION_MODIFIER));
     trainerCard->hasAllFrontierSymbols = HasAllFrontierSymbols();
     *((u16*)&trainerCard->berryCrushPoints) = gSaveBlock2Ptr->frontier.cardBattlePoints;
     if (trainerCard->hasAllFrontierSymbols)
@@ -782,12 +787,12 @@ void TrainerCard_GenerateCardForPlayer(struct TrainerCard *trainerCard)
         trainerCard->facilityClass = gLinkPlayerFacilityClasses[trainerCard->trainerId % NUM_MALE_LINK_FACILITY_CLASSES];
 }
 
-void CopyTrainerCardData(struct TrainerCard *dst, u16 *src, u8 gameVersion)
+void CopyTrainerCardData(struct TrainerCard *dst, u16 *src, u8 gameVersion, u8 versionModifier)
 {
     memset(dst, 0, sizeof(struct TrainerCard));
     dst->version = gameVersion;
 
-    switch (VersionToCardType(gameVersion))
+    switch (VersionToCardType(gameVersion, versionModifier))
     {
     case CARD_TYPE_FRLG:
         memcpy(dst, src, 0x60);
@@ -1862,7 +1867,7 @@ static u8 GetSetCardType(void)
     }
 }
 
-static u8 VersionToCardType(u8 version)
+ static u8 VersionToCardType(u8 version, u8 versionModifier)
 {
     if (version == VERSION_FIRE_RED || version == VERSION_LEAF_GREEN)
         return CARD_TYPE_FRLG;
