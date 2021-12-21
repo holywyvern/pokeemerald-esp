@@ -219,13 +219,13 @@ BerryTree_Text_BerryGrowthStage4:
 	.string "florecen {STR_VAR_2}.$"
 
 BerryTree_Text_CareAdverbGreat:
-	.string "hermosamente$"
+	.string "intensamente$"
 
 BerryTree_Text_CareAdverbPoor:
-	.string "bellamente$"
+	.string "lentamente$"
 
 BerryTree_Text_CareAdverbGood:
-	.string "lindamente$"
+	.string "cuidadosamente$"
 
 BerryTree_Text_WantToPick:
 	.string "¡Encontraste {STR_VAR_2} {STR_VAR_1}!\p"
