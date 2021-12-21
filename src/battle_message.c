@@ -322,7 +322,7 @@ static const u8 sText_AndEllipsis[] = _("Y…\p");
 static const u8 sText_HMMovesCantBeForgotten[] = _("No puedes olvidar MO\nahora.\p");
 static const u8 sText_NotVeryEffective[] = _("No fue muy efectivo…");
 static const u8 sText_SuperEffective[] = _("¡Es muy efectivo!");
-static const u8 sText_GotAwaySafely[] = _("{PLAY_SE SE_FLEE}¡Pudo escapar!\p");
+static const u8 sText_GotAwaySafely[] = _("{PLAY_SE SE_FLEE}¡Escapaste sin problemas!\p");
 static const u8 sText_PkmnFledUsingIts[] = _("{PLAY_SE SE_FLEE}¡{B_ATK_NAME_WITH_PREFIX} escapó\nusando {B_LAST_ITEM}!\p");
 static const u8 sText_PkmnFledUsing[] = _("{PLAY_SE SE_FLEE}¡{B_ATK_NAME_WITH_PREFIX} escapó\nusando {B_ATK_ABILITY}!\p");
 static const u8 sText_WildPkmnFled[] = _("{PLAY_SE SE_FLEE}¡{B_BUFF1} salvaje escapó!");
@@ -2866,7 +2866,6 @@ static void GetBattlerNick(u32 battlerId, u8 *dst)
 
 #define HANDLE_NICKNAME_STRING_CASE(battlerId)                          \
     GetBattlerNick(battlerId, text);                                    \
-    StringGetEnd10(text);                                               \
     if (GetBattlerSide(battlerId) != B_SIDE_PLAYER)                     \
     {                                                                   \
         if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)                     \
@@ -3522,20 +3521,15 @@ static void ExpandBattleTextBuffPlaceholders(const u8 *src, u8 *dst)
             srcID += 2;
             break;
         case B_BUFF_MON_NICK_WITH_PREFIX: // poke nick with prefix
+            GetMonData(&gPlayerParty[src[srcID + 2]], MON_DATA_NICKNAME, text);
             StringGetEnd10(text);
             StringAppend(dst, text);        
-            if (GetBattlerSide(src[srcID + 1]) == B_SIDE_PLAYER)
-            {
-                GetMonData(&gPlayerParty[src[srcID + 2]], MON_DATA_NICKNAME, text);
-            }
-            else
+            if (GetBattlerSide(src[srcID + 1]) != B_SIDE_PLAYER)
             {
                 if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
                     StringAppend(dst, sText_FoePkmnPrefix);
                 else
                     StringAppend(dst, sText_WildPkmnPrefix);
-
-                GetMonData(&gEnemyParty[src[srcID + 2]], MON_DATA_NICKNAME, text);
             }
             // StringGetEnd10(text);
             // StringAppend(dst, text);            
