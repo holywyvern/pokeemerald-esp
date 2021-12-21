@@ -1,26 +1,26 @@
 SecretBase_Text_TreeCanBeClimbed:
-	.string "If some vines drop down, this tree can\n"
-	.string "be climbed.$"
+	.string "Algunas lianas de este árbol se\n"
+	.string "pueden trepar.$"
 
 SecretBase_Text_TreeUseSecretPower:
-	.string "If some vines drop down, this tree can\n"
-	.string "be climbed.\p"
-	.string "Use the SECRET POWER?$"
+	.string "Algunas lianas de este árbol se\n"
+	.string "pueden trepar.\p"
+	.string "¿Usar Daño Secreto?$"
 
 SecretBase_Text_VineDroppedDown:
-	.string "A thick vine dropped down!$"
+	.string "¡Una liana salió del arbol!$"
 
 SecretBase_Text_ClumpOfGrass:
-	.string "If this clump of grass can be moved,\n"
-	.string "it might be possible to go inside.$"
+	.string "Si pudieras mover este arbusto,\n"
+	.string "quizas puedas ir adentro de el.$"
 
 SecretBase_Text_ClumpUseSecretPower:
-	.string "If this clump of grass can be moved,\n"
-	.string "it might be possible to go inside.\p"
-	.string "Use the SECRET POWER?$"
+	.string "Si pudieras mover este arbusto,\n"
+	.string "quizas puedas ir adentro de el.\p"
+	.string "¿Usar Daño Secreto?$"
 
 SecretBase_Text_DiscoveredSmallEntrance:
-	.string "Discovered a small entrance!$"
+	.string "¡Descubriste una entrada!$"
 
 	.include "data/text/secret_base_trainers.inc"
 
